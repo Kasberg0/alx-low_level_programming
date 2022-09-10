@@ -12,6 +12,7 @@ int main(void)
 {
 	char low;
 	char row;
+
 	row = 'a';
 	for (low = 0; low < 10; low++)
 	{
