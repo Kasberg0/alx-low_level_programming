@@ -12,7 +12,7 @@ int _lenght(char *s)
 }
 
 /**
- * checkp - checks if the string is palindrome
+ * _checkp - checks if the string is palindrome
  * @i: is the index
  * @lg: is the length of the string
  * @s: is the string
@@ -46,5 +46,5 @@ int _checkp(int i, int lg, char *s)
  */
 int is_palindrome(char *s)
 {
-	return (_checkp(0, _lenght(s), - 1, s));
+	return (checkp(0, _lenght(s), - 1, s));
 }
