@@ -6,9 +6,9 @@
  */
 int _lenght(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        return (1 + _lenght(s + 1));
+	if (*s == '\0')
+		return (0);
+	return (1 + _lenght(s + 1));
 }
 
 /**
@@ -20,14 +20,14 @@ int _lenght(char *s)
  */
 int _checkp(int i, int lg, char *s)
 {
-        if (lg > 0)
-        {
-                if (s[i] == s[lg-1])
-                    return (_checkp(i + 1, lg - 1, s));
-                else
-                    return (0);
-        }
-        return (1);
+	if (lg > 0)
+	{
+		if (s[i] == s[lg-1])
+			return (_checkp(i + 1, lg - 1, s));
+		else
+			return (0);
+	}
+	return (1);
 }
 
 
