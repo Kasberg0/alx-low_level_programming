@@ -22,7 +22,7 @@ int _checkp(int i, int lg, char *s)
 {
 	if (lg > 0)
 	{
-		if (s[i] == s[lg-1])
+		if (s[i] == s[lg - 1])
 			return (_checkp(i + 1, lg - 1, s));
 		else
 			return (0);
